@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Applications </h1>
+
+      </div>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <p>filters</p>
+  </div>
+  <div class="govuk-grid-column-three-quarters">
+    
+  
+          
+  
+          <h2 class="govuk-heading-m">Applications</h2>
+  
+          
+
+  
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              
+              <dd class="govuk-summary-list__value">
+                Euston Place Dental Practice<br>72 Guild Street<br>London<br>
+                SE23 6FH
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Submitted<span class="govuk-visually-hidden"> previous application number</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              
+              <dd class="govuk-summary-list__value">
+                For personal use
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> licence type</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              
+              <dd class="govuk-summary-list__value">
+                72 Guild Street<br>London<br>SE23 6FH
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              
+              <dd class="govuk-summary-list__value">
+                Valid for 6 months
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> licence period</span>
+                </a>
+              </dd>
+            </div><br>
+
+           
+          </dl>
+  
+        
+          <form action="/form-handler" method="post" novalidate>
+  
+            <input type="hidden" name="answers-checked" value="true">
+  
+         
+  
+          </form>
+  
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+  
+
+         
+      
+
+
+{% endblock %}
