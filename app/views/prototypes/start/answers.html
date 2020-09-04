@@ -51,7 +51,7 @@ UKPRN: 87651234</span>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Checked
+                
                 <span class="govuk-visually-hidden"> address</span>
               </a>
             </dd>
@@ -126,7 +126,7 @@ UKPRN: 87651234</span>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> address</span>
+                Edit<span class="govuk-visually-hidden"> address</span>
               </a>
             </dd>
           </div>
@@ -144,7 +144,7 @@ UKPRN: 87651234</span>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"> address</span>
+                Edit<span class="govuk-visually-hidden"> address</span>
               </a>
             </dd>
           </div>
@@ -159,7 +159,7 @@ UKPRN: 87651234</span>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Checked<span class="govuk-visually-hidden"> address</span>
+                Edit<span class="govuk-visually-hidden"> address</span>
               </a>
             </dd>
           </div>
@@ -169,12 +169,14 @@ UKPRN: 87651234</span>
             Uploaded file
             </dt>
             <dd class="govuk-summary-list__value">
-              OCR_accreditation.pdf
+
+              <a class="govuk-link" href="#">
+                OCR_accreditation.pdf<span class="govuk-visually-hidden"> address</span>
+                </a>
+              
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-              View<span class="govuk-visually-hidden"> address</span>
-              </a>
+              
             </dd>
           </div>
 
@@ -187,14 +189,15 @@ UKPRN: 87651234</span>
              I'm not sure what to write in this section but it may be useful to.
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Checked<span class="govuk-visually-hidden"> address</span>
-              </a>
+              
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="">
+                  
+                </div>
+                
+                
             </dd>
           </div>
-
-
-        
 
         
            <div class="govuk-summary-list__row">
@@ -205,9 +208,7 @@ UKPRN: 87651234</span>
               2000
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Checked<span class="govuk-visually-hidden"> address</span>
-              </a>
+              
             </dd>
           </div>
 
@@ -231,7 +232,7 @@ UKPRN: 87651234</span>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"></span>
+                Edit<span class="govuk-visually-hidden"></span>
               </a>
             </dd>
           </div>
@@ -287,7 +288,7 @@ UKPRN: 87651234</span>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"></span>
+                Edit<span class="govuk-visually-hidden"></span>
               </a>
             </dd>
           </div>
@@ -343,7 +344,7 @@ UKPRN: 87651234</span>
             </dd>
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                Change<span class="govuk-visually-hidden"></span>
+                Edit<span class="govuk-visually-hidden"></span>
               </a>
             </dd>
           </div>
@@ -398,22 +399,19 @@ UKPRN: 87651234</span>
           <input type="hidden" name="answers-checked" value="true">
 
           <a href="dash2-approve" class="govuk-button show-continue">
-         Approve application
+         Approve 
     </a>
   &nbsp; &nbsp;
 
   
     
-    <select class="govuk-select" id="sort" name="sort">
-      <option value="published">Rejected</option>
-      <option value="updated" selected>Change status</option>
-      <option value="views">First line waiting</option>
-      <option value="comments">Second line waiting</option>
-    </select>
+    
+
+    <a href="dash2"  class="govuk-button govuk-button--secondary">Reject</a><br>
+
+    <a href="status"  class="govuk-button govuk-button--secondary">Change status</a><br>
 
     &nbsp; &nbsp;
-
-    <a href="dash2"  class="govuk-button govuk-button--secondary">Save and continue</a>
 
   
     
