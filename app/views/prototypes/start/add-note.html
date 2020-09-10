@@ -71,50 +71,44 @@
         </nav>
 
     
-
-            
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+              Subject
+            </label>
+          </h1>
           
-        
+          <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+
+         <div id="event-name-hint" class="govuk-hint">
+           
+          </div>
+        <br><br>
+
+       
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+              Note
+            </label>
+          </h1>
+          
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+          <div id="event-name-hint" class="govuk-hint">
+            You have 500 characters remaining
+          </div>
+        </div><br>
+
 
         <form action="/form-handler" method="post" novalidate></form>
 
           <input type="hidden" name="answers-checked" value="true">
 
-          <a href="add-note" class="govuk-button show-continue">
-         Add note
+          <a href="notes" class="govuk-button show-continue">
+         Save note
     </a>
-  &nbsp; &nbsp;
+  
 
         </form>
-
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header" scope="col"> </th>
-              <th class="govuk-table__header" scope="col"> </th>
-            </tr>
-          </thead>
-
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-              
-              <h3 class="govuk-heading-m govuk-!-margin-bottom-3">
-                <a href="answers" class="govuk-link govuk-link--no-visited-state">
-                  Euston Place Dental Practice
-                </a></h3>
-                <p>Application reference: 1234588<br>
-                Independent Learning Provider<br>
-                UKPRN: 87651234<br>
-              18 August 2020</p>
-            </td>
             
-          </tr>
-          </tbody>
 
-          </table>
-
-       
 
       
     
