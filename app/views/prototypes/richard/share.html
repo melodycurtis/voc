@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+        
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      
+    
+  <nav class="app-sub-navigation" aria-label="Sub navigation">
+
+    <ul class="app-sub-navigation__list">
+  
+  
+        
+  
+          <li class="app-sub-navigation__item">
+            <a class="app-sub-navigation__link" aria-current="page" href="answers">About this service</a>
+          </li>
+        
+      
+
+  
+        
+  
+          <li class="app-sub-navigation__item">
+            <a class="app-sub-navigation__link" href="dash2">Research and insights</a>
+          </li>
+        
+      
+  
+  
+        
+  
+          <li class="app-sub-navigation__item">
+            <a class="app-sub-navigation__link" href="share">Share your work</a>
+          </li>
+        
+      </ul>
+  
+  </nav>
+
+  </legend>
+
+       
+  <h1 class="govuk-heading-xl">Share your work with others </h1>
+        
+        
+        
+
+<br><h2 class="govuk-heading-m">Show others how you are improving self-isolation in your area</h2>
+
+
+<br>
+<p>We are eager to hear from local organisations that are trialling new ways of improving self-isolation, especially amongst seldom heard groups of people.
+
+
+
+ <br><br> This might be a trial, test, experiment or pilot that you are planning or already running.
+  
+  
+  
+ <br><br>We are hoping you will share your insights about the interventions you are testing, so that other local organisations around the country can benefit too.</p>
+ <br>
+
+
+  <form action="/form-handler" method="post" novalidate>
+
+    <input type="hidden" name="answers-checked" value="true">
+
+    <a href="dash2-approve" class="govuk-button show-continue">
+   Share my work
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </form>
+       
+      </div>
+
+      
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
